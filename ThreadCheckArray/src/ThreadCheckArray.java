@@ -1,5 +1,17 @@
 import java.util.ArrayList;
 
+/**
+ * <h2>Description</h2>
+ * code for running threads
+ * * </br>methods: rec- Recursion to check if we have reached the sum
+ * </br> run- function that runs the threads
+ * @author liza
+  * @param array - input array
+ * </br> winArray - boolean array that present the numbers to choose
+ * </br> flag - true if sum if compatible
+ * </br> sd - ShareData class 
+ * </br> b - number to check 
+ */
 public class ThreadCheckArray implements Runnable 
 {
 	private boolean flag;
@@ -57,7 +69,7 @@ public class ThreadCheckArray implements Runnable
 			if (Thread.currentThread().getName().equals("thread1"))
 				rec(array.size()-1, b - array.get(array.size() - 1));
 			else 
-				rec(array.get(array.size() - 1), b);
+				rec(array.size() - 1, b);
 		if (array.size() == 1)
 			if (b == array.get(0) && !flag)
 			{

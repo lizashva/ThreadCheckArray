@@ -1,6 +1,13 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * <h2>Description</h2>
+ * main function
+ * </br> inputs: array list with numbers and number to check
+ *</br>output: boolean array with '1' for numbers in array that give us the current sum 
+ * @author liza
+ */
 public class TestThreadCheckArray {
 	public static void main(String[] args) {
 		try (Scanner input = new Scanner(System.in)) {
@@ -9,9 +16,11 @@ public class TestThreadCheckArray {
 			int num  = input.nextInt();
 			ArrayList<Integer> array = new ArrayList<Integer>(num);
 			System.out.println("Enter numbers for array");
-			
-			for (int index = 0; index < num; index++) 
-				array.set(index, input.nextInt());
+
+			for (int index = 0; index < num; index++) {
+				int x = input.nextInt();
+				array.add(x);
+			}
 			
 			System.out.println("Enter number");
 			num = input.nextInt();

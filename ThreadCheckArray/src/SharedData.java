@@ -1,5 +1,15 @@
 import java.util.ArrayList;
 
+/**
+ * <h2>Description</h2>
+ * class for share array data
+ * </br>methods: getter and setter for all members
+ * @author liza 
+ * @param array - input array
+ * </br> winArray - boolean array that present the numbers to choose
+ * </br> flag - true if sum if compatible
+ * </br> b - number to check
+ *  */
 public class SharedData 
 {
 	private ArrayList<Integer> array;
